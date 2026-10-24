@@ -75,17 +75,17 @@ Check the <a href="https://vuetifyjs.com/en/components/explorer/">Vue components
 
 
 ### Project requirements
-- Database:
+- Database: minim 3-4 tabele cu 3-4 coloane fiecare + relationare intre tabele. De exemplu:
   - User: id, name, email
   - Post: id, title, content, user_id, created_on, status (status poate fi PENDING, PUBLISHED, REMOVED)
   - Comment: id, post_id, content, user_id, created_on
 - Server:
-  - 8 endpoint-uri pentru operatiile CRUD pe Post si Comment + `createUser()`
-  - 2 endpoint-uri cu custom query pentru `getAllPublishedPostsForUser()` si `getAllCommentsForPost`()
+  - 8 endpoint-uri pentru operatiile CRUD (de exemplu, pe tabelele pe Post si Comment + `createUser()`)
+  - 2 endpoint-uri cu custom query (ex: pentru `getAllPublishedPostsForUser()` si `getAllCommentsForPost()`)
 - Frontend:
-  - sa permita operatii de tipul: create new post (pending), view posts and comments, view pending posts, add/update comment, remove post, etc. Minim 6 operatii.
+  - sa permita minim 7 operatii operatii, de exemplu: create new post (pending), view posts and comments, view pending posts, add/update comment, remove post, etc.
   - minim 4 componente Vue
-- Desktop client:
+- Desktop/mobile client:
   - sa permita minim 3 operatii: get all posts/comments containing keyword, approve/remove post, sendEmail to all selected persons (functionalitatea de sendEmail este inca un endpoint din server, se implementeaza usor cu SMTP, exista cod pe net)
 - Documentatie:
   - diagrama use-case
